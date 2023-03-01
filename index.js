@@ -10,6 +10,10 @@ const swiper = new Swiper('.swiper', {
       type: 'bullets',
       clickable: true
     },
+
+    a11y: {
+      paginationBulletMessage: "Перейти на слайд номер {{index}}"
+      }
 });
 
 

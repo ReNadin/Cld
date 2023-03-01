@@ -165,8 +165,26 @@
         width: 30px;
         height: 23px;
         z-index: 1000;
-        transition: visibility .2s ease-in-out;
+        transition: visibility .3s ease-in-out;
+    }
 
+    .burger::after {
+        content: '';
+        position: absolute;
+        top: -4px;
+        left: 7px;
+        bottom: -6px;
+        right: -22px;
+        outline: 2px solid var(--accent-color);
+        opacity: 0;
+    }
+
+    .burger:focus-visible::after {
+        opacity: 1; 
+    } 
+
+    .burger:active::after {
+        opacity: 0;
     }
 
     .burger__line {
@@ -175,6 +193,15 @@
         height: 3px;
         width: 30px;
         background-color: #000;
+        transition: background-color .3s ease-in-out;
+    }
+
+    .burger:hover .burger__line {
+        background-color: var(--hover-color);
+    }
+
+    .burger:active .burger__line {
+        background-color: var(--active-color);
     }
 
     .burger--active {
@@ -213,7 +240,7 @@
 
 
     .line2 {
-        top: 10px;
+        top: 3px;
     }
 
     .line3 {
@@ -1101,6 +1128,10 @@
         border-radius: 8px;
         font-size: 12px;
         line-height: 15px;
+    }
+
+    .left-block-content__btn:hover {
+        color: #fff;
     }
 
     .special-block {

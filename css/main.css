@@ -148,7 +148,6 @@ body {
   display: none;
 }
 
-
 .header__header-logo {
   margin-right: auto;
   padding-right: 30px;
@@ -409,9 +408,27 @@ body {
   justify-content: center;
 }
 
+
 .swiper-pagination-bullet {
+  background-color: #CACACA;
   width: 15px;
   height: 15px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+}
+
+.swiper-pagination-bullet:hover {
+  border: 1px solid var(--active-color);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet:focus {
+  border: 1px solid var(--active-color);
+  opacity: 1;
 }
 
 .img1 {
@@ -908,6 +925,8 @@ body {
 
 .question {
   margin-right: auto;
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -1049,10 +1068,27 @@ svg ellipse {
   background-color: #414141;
   border-radius: 16px;
   border: transparent;
+  resize: none;
 }
 
 ::placeholder {
-  position: absolute;
+  opacity: 1;
+}
+
+::-webkit-input-placeholder {
+  opacity: 1;
+}
+::-moz-placeholder {
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  opacity: 1;
+}
+::-ms-input-placeholder {
+  opacity: 1;
+}
+::placeholder {
+  opacity: 1;
 }
 
 .footer-form {

@@ -24,11 +24,11 @@
         <header class="header">
             <div class="container header-container">
                 <div class="header-content">
-                    <div aria-label="Кнопка открытия меню" tabindex="0" type="button" class="burger">
+                    <button aria-label="Кнопка открытия меню" tabindex="0" type="button" class="burger">
                         <span class="burger__line line1"></span>
                         <span class="burger__line line2"></span>
                         <span class="burger__line line3"></span>
-                    </div>
+                    </button>
                     <a tabindex="-1" class="header__header-logo" href="#">
                         <img class="header-img" src="./img/logo.svg" alt="Логотип компании Евклид">
                     </a>
@@ -82,6 +82,15 @@
             <section class="hero">
                 <div class="container">
                     <div class="hero-content">
+                        <h1 class="hero-content__title">
+                            Проектные решения любой сложности
+                        </h1>
+                        <p class="hero-content__descr">
+                            Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов
+                        </p>
+                        <button class="hero-content__btn btn">
+                            Заказать расчёт
+                        </button>    
                         <div class="swiper hero__swiper">
                             <div class="swiper-wrapper">
                             <div class="swiper-slide img1"></div>
@@ -92,15 +101,6 @@
                             <div class="swiper-pagination hero__pagination">
                             </div>                   
                         </div>
-                        <h1 class="hero-content__title">
-                            Проектные решения любой сложности
-                        </h1>
-                        <p class="hero-content__descr">
-                            Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов
-                        </p>
-                        <button class="hero-content__btn btn">
-                            Заказать расчёт
-                        </button>    
                     </div>
                 </div>
             </section>
@@ -151,16 +151,16 @@
                     <div class="work__nav">
                         <ul class="work-list tabs-nav">
                             <li class="work-list__item tabs-nav__item">
-                                <a tabindex="0" class="step-link tabs-nav__btn tabs-nav__btn--active" data-path="one">1 шаг</a>
+                                <button class="step-link tabs-nav__btn tabs-nav__btn--active" data-path="one">1 шаг</button>
                             </li>
                             <li class="work-list__item tabs-nav__item">
-                                <a tabindex="0" class="step-link tabs-nav__btn" data-path="two">2 шаг</a>
+                                <button class="step-link tabs-nav__btn" data-path="two">2 шаг</button>
                             </li>
                             <li class="work-list__item tabs-nav__item">
-                                <a tabindex="0" class="step-link tabs-nav__btn" data-path="three">3 шаг</a>
+                                <button class="step-link tabs-nav__btn" data-path="three">3 шаг</button>
                             </li>
                             <li class="work-list__item tabs-nav__item">
-                                <a tabindex="0" class="step-link tabs-nav__btn" data-path="four">4 шаг</a>
+                                <button class="step-link tabs-nav__btn" data-path="four">4 шаг</button>
                             </li>
                         </ul>
                     </div>
@@ -457,9 +457,9 @@
                             <h2 class="footer-form__title section-title">
                                 Оставить заявку
                             </h2>
-                            <input class="form-input footer-form__name" type="text" placeholder="Фамилия, имя и&nbsp;отчество*">
-                            <input class="form-input footer-form__email" type="email" placeholder="Email*">
-                            <input class="form-input footer-form__text" type="text" placeholder="Сообщение">
+                            <input aria-label="Введите информацию в форму" class="form-input footer-form__name" type="text" required placeholder="Фамилия, имя и&nbsp;отчество*">
+                            <input aria-label="Введите информацию в форму" class="form-input footer-form__email" type="email" required placeholder="Email*">
+                            <textarea aria-label="Поле для вашего сообщения" class="form-input footer-form__text">Сообщение</textarea>
                             <div class="footer-form__button">
                                 <button class="footer-button btn">
                                     Отправить данные
